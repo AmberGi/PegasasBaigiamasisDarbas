@@ -8,13 +8,13 @@
 1. Open register/login;
 2. Click on "Sukurti paskyra";
 3. Input email(gigigi@gmail.com);
-4. Input password (Books555), make it visible;
-5. Confirm password (Books555), make it visible;
+4. Input password (Books555);
+5. Confirm password (Books555);
 6. Click on check box "Susipazinau su privatumo politika";
 7. Click "Login" button;
-8. Check if account status changed; 
+8. Check if message "Jau yra paskyra su šiuo elektroninio pašto adresu. Prašome prisijungti" appears; 
 
-Expected result: account status changed to "Mano paskyra".
+Expected result: the message "Jau yra paskyra su šiuo elektroninio pašto adresu. Prašome prisijungti".
 
 ### **Login**
 - Test 2 (logInWithNonExistingAccount)
