@@ -11,21 +11,22 @@ public class BookPurchingTest extends BaseTest {
     @Override
     public void setUp() {
         BookPurchingPage.open();
+        BookPurchingPage.closeCookies();
     }
 
     @Test
-    public void testAddingProductToCart() {
+    public void testAddBookMedineKaukeToCart() {
 
         String expectedResult = "Medinė kaukė. Tikroji mano istorija";
         String actualResult;
 
-        BookPurchingPage.clickOnKnygos();
+        BookPurchingPage.clickOnMainMeniuKnygos();
         BookPurchingPage.clickOnNaujosKnygos();
         BookPurchingPage.clickOnBookMedineKauke();
         BookPurchingPage.clikOnAddMedineKaukeToCart();
         BookPurchingPage.clickOnCheckTheCart();
 
-        actualResult = BookPurchingPage.medineKaukeIsInTheCart();
+        actualResult = BookPurchingPage.bookMedineKaukeIsInTheCart();
 
         Assert.assertEquals(expectedResult, actualResult);
     }
