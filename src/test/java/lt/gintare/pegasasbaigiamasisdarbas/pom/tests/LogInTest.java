@@ -11,10 +11,11 @@ public class LogInTest extends BaseTest {
     @Override
     public void setUp() {
         LogInPage.open();
+        LogInPage.closeCookies();
     }
 
     @Test
-    public void testLogInWithNonExistingAccount() {
+    public void testLogInWithNonExistingAccountInformation() {
 
         String expectedResult
                 = "Prisijungimo duomenys neteisingi";
@@ -22,8 +23,8 @@ public class LogInTest extends BaseTest {
         String actualResult;
 
         LogInPage.clickOnLoginRegister();
-        LogInPage.enterTextToFieldEmail("tokioemailnera@gmail.com");
-        LogInPage.enterTextToPassword("nezinau");
+        LogInPage.enterNonExistingEmailToFieldEmail("tokioemailnera@gmail.com");
+        LogInPage.enterNonExistingPasswordToFieldPassword("nezinau");
         LogInPage.clickOnButtonPrisijungti();
 
         actualResult = LogInPage.readMessage();
