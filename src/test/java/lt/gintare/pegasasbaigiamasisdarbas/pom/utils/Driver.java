@@ -10,7 +10,6 @@ import java.time.Duration;
 
 public class Driver {
 
-    // private static WebDriver driver;
     private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
     public static void setDriver() {
@@ -21,9 +20,7 @@ public class Driver {
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         chromeOptions.addArguments("--start-maximized ");
         chromeOptions.addArguments("--force-device-scale-factor=0.75");
-        // chromeOptions.addArguments("--headless");
 
-        // driver = new ChromeDriver(chromeOptions);
         driverThread.set(new ChromeDriver(chromeOptions));
         driverThread.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10)
         );

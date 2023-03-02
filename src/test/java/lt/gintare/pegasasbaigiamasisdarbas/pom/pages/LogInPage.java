@@ -8,7 +8,7 @@ public class LogInPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.LogInPage.closeCookiesbutton
+                Locator.LogInPage.buttonCloseCookies
         );
     }
 

@@ -2,9 +2,9 @@
 ### Link to the page - [www.pegasas.lt](https://www.pegasas.lt)
 
 ### **Register**
-- Test 1 (makeNewAccount)
+- Test 1 (testMakeNewAccountWithAlreadyUsedEmail)
 
-*Try to make new account with existing info*
+*Try to create new account with already used email*
 1. Open register/login;
 2. Click on "Sukurti paskyra";
 3. Input email(gigigi@gmail.com);
@@ -17,47 +17,46 @@
 Expected result: the message "Jau yra paskyra su šiuo elektroninio pašto adresu. Prašome prisijungti".
 
 ### **Login**
-- Test 2 (logInWithNonExistingAccount)
+- Test 2 (testLogInWithNonExistingAccountInformation)
 
 *Try to log in with non-existing account information*
-1. Open login;
-2. Input email (tokioemailnera@yahoo.com) and password (nezinau);
-3. Make password visible (click on eye);
+1. Open login/register;
+2. Input email (tokioemailnera@yahoo.com)
+3. Input password (nezinau);
 4. Click "Login" button;
-5. Check if alert message is "Prisijungimo duomenys neteisingi arba jūsų paskyra laikinai yra atjungta. Prašome pabandyti prisijungti vėliau.";
+5. Check if alert message "Prisijungimo duomenys neteisingi..." apears;
 
-Expected result: the message "Prisijungimo duomenys neteisingi arba jūsų paskyra laikinai yra atjungta. Prašome pabandyti prisijungti vėliau." appears;
+Expected result: the message "Prisijungimo duomenys neteisingi..." appears;
 
 ### **Cart**
-- Test 3 (addingProductToCart)
+- Test 3 (testAddBookMedineKaukeToCart)
 
-*Try to add the book to cart*
-1. Click on "Knygos"
-2. Click on "Naujos knygos"
-3. Click on "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija"
-4. Click on "Ideti i krepseli"
-5. Click on "Perziureti krepseli"
-6. Check if the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is in the cart
+*Try to add the book Medine kauke to cart*
+1. Click on "Knygos";
+2. Click on "Naujos knygos";
+3. Click on "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija";
+4. Click on "Ideti i krepseli";
+5. Click on "Perziureti krepseli";
+6. Check if the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is in the cart;
 
 Expected result: the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is in the cart.
 
 ### **Sorting products by max discount**
-- Test 4 (sortingProductsByMaxDiscount)
+- Test 4 (testSortingProductsByMaxDiscount)
 
-*Try to sort the products by max discount*
-
-1. Click on "Knygos";
-2. Click on "Vaiku ir jaunimo literatura";
+*Try to sort the books by max discount*
+1. Click on "Knygos vaikams ir paaugliams";
+2. Click on "Paaugliams ir jaunimui";
 3. Click on "Prekiu rikiavimas";
 4. Click on "Didziausia nuolaida";
-5. Check if the book are sorted by max discount;
+5. Check if the book are sorted by max discount (-80%);
 
-Expected result: the books are sorted by max discount.
+Expected result: the books are sorted by max discount(-80%).
 
 ### **GiftCard**
-- Test 5 (addingGiftCardToCart)
+- Test 5 (testAddBlackDizainGiftCardToCart)
 
-*Try to add the book form new books to cart*
+*Try to add gift card black dizain to cart*
 1. Click on "Dovanu kuponai";
 2. Click on "El. dovanų kuponas vaikiškas (tamsus)";
 3. Click on "5,00 Eur";
@@ -67,3 +66,16 @@ Expected result: the books are sorted by max discount.
 
 Expected result: the gift card "El. dovanų kuponas vaikiškas (tamsus)" is in the cart.
 
+### **Cart**
+- Test 6 (testDeleteBookMedineKaukeFromCart)
+
+*Try to delete the book "Medine kauke" from cart*
+1. Click on "Knygos";
+2. Click on "Naujos knygos";
+3. Click on "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija";
+4. Click on "Ideti i krepseli";
+5. Click on "Perziureti krepseli";
+6. Click on trash can symbol;
+7. Check if the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is not in the cart;
+
+Expected result: message "The Cart Is Empty" appears.

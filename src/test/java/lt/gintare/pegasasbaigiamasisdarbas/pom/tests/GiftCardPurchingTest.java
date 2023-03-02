@@ -16,7 +16,6 @@ public class GiftCardPurchingTest extends BaseTest {
 
     @Test
     public void testAddBlackDizainGiftCardToCart() {
-
         String expectedResult = "El. dovanų kuponas vaikiškas (tamsus)";
         String actualResult;
 

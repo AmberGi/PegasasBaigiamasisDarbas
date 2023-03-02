@@ -8,7 +8,7 @@ public class GiftCardPurchingPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.GiftCardPurchingPage.closeCookiesbutton
+                Locator.GiftCardPurchingPage.buttonCloseCookies
         );
     }
 

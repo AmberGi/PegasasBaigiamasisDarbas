@@ -8,7 +8,7 @@ public class SortBooksPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.SortBooksPage.closeCookiesButton
+                Locator.SortBooksPage.buttonCloseCookies
         );
     }
 

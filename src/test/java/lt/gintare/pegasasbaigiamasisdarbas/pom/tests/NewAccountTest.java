@@ -16,7 +16,6 @@ public class NewAccountTest extends BaseTest {
 
     @Test
     public void testMakeNewAccountWithAlreadyUsedEmail() {
-
         String expectedResult = "Jau yra paskyra su šiuo elektroninio pašto adresu.";
         String actualResult;
 

@@ -16,7 +16,6 @@ public class LogInTest extends BaseTest {
 
     @Test
     public void testLogInWithNonExistingAccountInformation() {
-
         String expectedResult
                 = "Prisijungimo duomenys neteisingi";
 

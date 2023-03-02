@@ -1,7 +1,6 @@
 package lt.gintare.pegasasbaigiamasisdarbas.pom.tests;
 
 import lt.gintare.pegasasbaigiamasisdarbas.pom.pages.SortBooksPage;
-import net.bytebuddy.TypeCache;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,7 +16,6 @@ public class SortBooksTest extends BaseTest {
 
     @Test
     public void testSortingProductsByMaxDiscount() {
-
         String expectedResult = "-80%";
         String actualResult;
 
@@ -29,6 +27,5 @@ public class SortBooksTest extends BaseTest {
         actualResult = SortBooksPage.getMaxDiscountMessage();
 
         Assert.assertTrue(actualResult.contains(expectedResult));
-
     }
 }

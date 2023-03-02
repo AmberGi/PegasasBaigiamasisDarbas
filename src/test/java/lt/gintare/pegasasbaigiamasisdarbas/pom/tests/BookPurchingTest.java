@@ -16,7 +16,6 @@ public class BookPurchingTest extends BaseTest {
 
     @Test
     public void testAddBookMedineKaukeToCart() {
-
         String expectedResult = "Medinė kaukė. Tikroji mano istorija";
         String actualResult;
 

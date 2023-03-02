@@ -8,7 +8,7 @@ public class BookPurchingPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.BookPurchingPage.closeCookiesbutton
+                Locator.BookPurchingPage.buttonCloseCookies
         );
     }
 

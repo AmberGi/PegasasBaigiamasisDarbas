@@ -8,7 +8,7 @@ public class NewAccountPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.NewAccountPage.closeCookiesbutton
+                Locator.NewAccountPage.buttonCloseCookies
         );
     }
 
