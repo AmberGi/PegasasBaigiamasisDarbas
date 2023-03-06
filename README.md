@@ -31,7 +31,7 @@ Expected result: the message "Prisijungimo duomenys neteisingi..." appears;
 ### **Cart**
 - Test 3 (testAddBookMedineKaukeToCart)
 
-*Try to add the book Medine kauke to cart*
+*Try to add the book "Medine kauke" to cart*
 1. Click on "Knygos";
 2. Click on "Naujos knygos";
 3. Click on "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija";
@@ -41,33 +41,7 @@ Expected result: the message "Prisijungimo duomenys neteisingi..." appears;
 
 Expected result: the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is in the cart.
 
-### **Sorting products by max discount**
-- Test 4 (testSortingProductsByMaxDiscount)
-
-*Try to sort the books by max discount*
-1. Click on "Knygos vaikams ir paaugliams";
-2. Click on "Paaugliams ir jaunimui";
-3. Click on "Prekiu rikiavimas";
-4. Click on "Didziausia nuolaida";
-5. Check if the book are sorted by max discount (-80%);
-
-Expected result: the books are sorted by max discount(-80%).
-
-### **GiftCard**
-- Test 5 (testAddBlackDizainGiftCardToCart)
-
-*Try to add gift card black dizain to cart*
-1. Click on "Dovanu kuponai";
-2. Click on "El. dovanų kuponas vaikiškas (tamsus)";
-3. Click on "5,00 Eur";
-4. Click on "Ideti i krepseli";
-5. Click on "Perziureti krepseli";
-6. Check if he gift card "El. dovanų kuponas vaikiškas (tamsus)" is in the cart;
-
-Expected result: the gift card "El. dovanų kuponas vaikiškas (tamsus)" is in the cart.
-
-### **Cart**
-- Test 6 (testDeleteBookMedineKaukeFromCart)
+Test 4 (testDeleteBookMedineKaukeFromCart)
 
 *Try to delete the book "Medine kauke" from cart*
 1. Click on "Knygos";
@@ -79,3 +53,28 @@ Expected result: the gift card "El. dovanų kuponas vaikiškas (tamsus)" is in t
 7. Check if the book "Algimantas Cekuolis. Medine kauke. Mano tikroji istorija" is not in the cart;
 
 Expected result: message "The Cart Is Empty" appears.
+
+### **Sorting products by max discount**
+- Test 5 (testSortingProductsByMaxDiscount)
+
+*Try to sort the books by max discount*
+1. Click on "Knygos vaikams ir paaugliams";
+2. Click on "Paaugliams ir jaunimui";
+3. Click on "Prekiu rikiavimas";
+4. Click on "Didziausia nuolaida";
+5. Check if the book are sorted by max discount (-80%);
+
+Expected result: the books are sorted by max discount(-80%).
+
+### **GiftCard**
+- Test 6 (testAddBlackDizainGiftCardToCart)
+
+*Try to add gift card black dizain to cart*
+1. Click on "Dovanu kuponai";
+2. Click on "El. dovanų kuponas vaikiškas (tamsus)";
+3. Click on "5,00 Eur";
+4. Click on "Ideti i krepseli";
+5. Click on "Perziureti krepseli";
+6. Check if he gift card "El. dovanų kuponas vaikiškas (tamsus)" is in the cart;
+
+Expected result: the gift card "El. dovanų kuponas vaikiškas (tamsus)" is in the cart.
