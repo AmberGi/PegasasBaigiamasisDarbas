@@ -1,7 +1,6 @@
 package lt.gintare.pegasasbaigiamasisdarbas.pom.pages;
 
-public class BookDeletingPage {
-
+public class CartPage {
     public static void open() {
         Common.openUrl("https://www.pegasas.lt"
         );
@@ -9,49 +8,55 @@ public class BookDeletingPage {
 
     public static void closeCookies() {
         Common.clickElement(
-                Locator.BookDeletingPage.buttonCloseCookies
+                Locator.cartPage.buttonCloseCookies
         );
     }
 
     public static void clickOnMainMeniuKnygos() {
         Common.clickElement(
-                Locator.BookDeletingPage.mainMeniuKnygos
+                Locator.cartPage.mainMeniuKnygos
         );
     }
 
     public static void clickOnNaujosKnygos() {
         Common.clickElement(
-                Locator.BookDeletingPage.meniuGroupKnygosNaujosKnygos
+                Locator.cartPage.meniuGroupKnygosNaujosKnygos
         );
     }
 
-    public static void clickOnBookMedineKauke() {
+    public static void clickOnTheBook() {
         Common.clickElement(
-                Locator.BookDeletingPage.bookMedineKauke
+                Locator.cartPage.theBook
         );
     }
 
-    public static void clikOnAddMedineKaukeToCart() {
+    public static void clikOnAddTheBookToCart() {
         Common.clickElement(
-                Locator.BookDeletingPage.buttonMedineKaukeToChart
+                Locator.cartPage.buttonTheBookToChart
+        );
+    }
+
+    public static String theBookIsInTheCart() {
+        return Common.getElementText(
+                Locator.cartPage.theBookIsInTheCart
         );
     }
 
     public static void clickOnCheckTheCart() {
         Common.clickElement(
-                Locator.BookDeletingPage.buttonCheckTheCart
+                Locator.cartPage.buttonCheckTheCart
         );
     }
 
     public static void clickOnDeleteTheBookFromTheCart() {
         Common.clickElement(
-                Locator.BookDeletingPage.buttonDelete
+                Locator.cartPage.buttonDelete
         );
     }
 
     public static String theCartIsEmpty() {
         return Common.getElementText(
-                Locator.BookDeletingPage.messageTheCartIsEmpty
+                Locator.cartPage.messageTheCartIsEmpty
         );
     }
 }

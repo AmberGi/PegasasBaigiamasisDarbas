@@ -40,21 +40,26 @@ public class Locator {
                 By.xpath("//p[@class='Message-message-1d9']");
     }
 
-    public static class BookPurchingPage {
+    public static class cartPage {
         public static By buttonCloseCookies =
                 By.xpath("//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
         public static By mainMeniuKnygos =
                 By.xpath("//*[@id='knygos/-604']");
         public static By meniuGroupKnygosNaujosKnygos =
                 By.xpath("//*[@data-cy='lupa-child-category-item' and contains(text(),'Naujos')]");
-        public static By bookMedineKauke =
-                By.xpath("//div[@title = 'Medinė kaukė. Tikroji mano istorija']");
-        public static By buttonMedineKaukeToChart =
+        public static By theBook =
+                By.xpath("(//a[@class='lupa-search-results-product-title-text lupa-title-link'])[2]");
+        public static By buttonTheBookToChart =
                 By.xpath("//button[@title='Įdėti į krepšelį']");
         public static By buttonCheckTheCart =
                 By.xpath("(//button[contains(text(), 'Peržiūrėti krepšelį')])[2]");
-        public static By medineKaukeIsInTheCart =
+        public static By theBookIsInTheCart =
                 By.xpath("(//*[@class='CartItemDetails-productName-b8k'])[1]");
+        public static By buttonDelete =
+                By.xpath("(//div[@class='DesktopCartItem-desktopCartItem-3Qg'])" +
+                        "[1]//button[contains(@class,'CartItemRemoveButton-remove')]");
+        public static By messageTheCartIsEmpty =
+                By.xpath("//*[@id='root']/div[3]/h1");
     }
 
     public static class SortBooksPage {
@@ -87,25 +92,5 @@ public class Locator {
                 By.xpath("(//button[contains(text(), 'Peržiūrėti krepšelį')])[2]");
         public static By buttonDovanuKuponasTamsusIsInTheCart =
                 By.xpath("(//a[text()='El. dovanų kuponas vaikiškas (tamsus)'])[1]");
-    }
-
-    public static class BookDeletingPage {
-        public static By buttonCloseCookies =
-                By.xpath("//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
-        public static By mainMeniuKnygos =
-                By.xpath("//*[@id='knygos/-604']");
-        public static By meniuGroupKnygosNaujosKnygos =
-                By.xpath("//*[@data-cy='lupa-child-category-item' and contains(text(),'Naujos')]");
-        public static By bookMedineKauke =
-                By.xpath("//div[@title = 'Medinė kaukė. Tikroji mano istorija']");
-        public static By buttonMedineKaukeToChart =
-                By.xpath("//button[@title='Įdėti į krepšelį']");
-        public static By buttonCheckTheCart =
-                By.xpath("(//button[contains(text(), 'Peržiūrėti krepšelį')])[2]");
-        public static By buttonDelete =
-                By.xpath("(//div[@class='DesktopCartItem-desktopCartItem-3Qg'])" +
-                        "[1]//button[contains(@class,'CartItemRemoveButton-remove')]");
-        public static By messageTheCartIsEmpty =
-                By.xpath("//*[@id='root']/div[3]/h1");
     }
 }
